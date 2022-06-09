@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home | First Python & Flask Site</title>
+	</head>
+	<body>
+		<div>
+			{% block content %}
+			<h4>Welcome to my first website made with Python & Flask via Vim on a Linux machine!</h4>
+			<p>Hello, {{ name }}. Hope you're enjoying Python !</p>
+			{% endblock %}
+		</div>
+	<script type="text/javascript" src = "{{ url_for('static', filename='index.js') }}"></script>
+	</body>
+</html>
